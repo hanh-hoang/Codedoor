@@ -14,13 +14,19 @@ If its above 5 print out: this is sufficiently high enough. Push your code to Gi
 <html>
 <body>
 
-<p>Let's check out our customer loyalty program.</p>
+<div id="div1">
 
 <button onclick="myFunction()">Click me</button>
 
 <p id="demo"></p>
 <p id="prize"></p>
 <script>
+var para = document.createElement("p");
+var node = document.createTextNode("Let's check out our customer loyalty program.");
+para.appendChild(node);
+var element = document.getElementById("div1");
+element.appendChild(para);
+  
 function myFunction() {
   var person = prompt("Please enter your name");
   var number = prompt("Please enter a number between 1 and 10");
@@ -30,8 +36,8 @@ function myFunction() {
     "Hello " + person;
   }
   if (isNaN(number)){
-    document.getElementById("prize").innerHTML =
-    "Sorry, not a valid number";}
+    alert(
+    "Sorry, not a valid number")}
   else{   
     if (number < 0){
     document.getElementById("prize").innerHTML =
