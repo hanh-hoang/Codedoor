@@ -17,6 +17,7 @@ Push your code to GitHub.
 */
 
 var ciaMessage = ["The", "dog", "will", "eat", "a", "German", "bratwurst"];
+console.log(typeof(ciaMessage));
 //Remove the last element from the message array using .pop.
 ciaMessage.pop()
 //Use the .push method to add the words breakfast and Munich as separate strings to the end of the array.
