@@ -1,6 +1,7 @@
 //Project Kelvin:
+"use strict";
 //Create a variable named kelvin, and set it equal to 293. 
-let kelvin = 293;
+const kelvin = 293;
 
 //Create a variable named Celsius. Subtract 273 minus kelvin and store it in the variable Celsius. 
 let celsius = 373 - kelvin;
