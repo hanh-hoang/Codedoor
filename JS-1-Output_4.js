@@ -38,6 +38,7 @@ console.log(ciaMessage.join(" "));
 ciaMessage.length
 //Write a function using min and max to generate random numbers and add them to the array. 
 function getRandomInt(min, max) {
+    debugger;
     min = Math.ceil(min);
     max = Math.floor(max);
     return Math.floor(Math.random() * (max - min + 1)) + min;
