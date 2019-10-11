@@ -1,4 +1,5 @@
-/* Project Customer Loyalty Game:
+<!-- 
+Project Customer Loyalty Game:
 The Marketing Manager comes in and tells you: Hey can you please build a game for our customers? 
 They should state their name and a number. 
 If the number is above 5, they will our amazing cheese pretzels for life. 
@@ -8,7 +9,7 @@ Create a function that checks if the user has entered her username and if so pri
 Learn how to use the switch statement. Learn how to generate a random number. Let the user enter a number via prompt. 
 Save the random number to a variable. Use the number stored in the variable. If the number is below 5 print out: this is too low. 
 If its above 5 print out: this is sufficiently high enough. Push your code to GitHub.
-*/
+//-->
 <!DOCTYPE html>
 <html>
 <body>
@@ -23,17 +24,27 @@ If its above 5 print out: this is sufficiently high enough. Push your code to Gi
 function myFunction() {
   var person = prompt("Please enter your name");
   var number = prompt("Please enter a number between 1 and 10");
+  
   if (person != null) {
     document.getElementById("demo").innerHTML =
     "Hello " + person;
   }
-  if (number > 5){
+  if (isNaN(number)){
     document.getElementById("prize").innerHTML =
-    "You will receive our amazing cheese pretzels for life!";
-  } else{
+    "Sorry, not a valid number";}
+  else{   
+    if (number < 0){
     document.getElementById("prize").innerHTML =
     "Sorry, this is too low, try again!";
+  } else if (number > 5){
+    document.getElementById("prize").innerHTML =
+    "Sorry, this is too high, try again!";    
   }
+    else {
+    document.getElementById("prize").innerHTML =
+    " You will receive our amazing cheese pretzels for life!";
+  }
+  }  
 }
 </script>
 
