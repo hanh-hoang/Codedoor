@@ -16,4 +16,4 @@ console.log(fahrenheit);
 
 
 //Find out how to use the .floor() method. 
-console.log(Math.floor(fahrenheit));
+console.log(Math.round(fahrenheit));
