@@ -16,7 +16,7 @@ Write a function using min and max to generate random numbers and add them to th
 Push your code to GitHub.
 */
 
-let ciaMessage = ["The", "dog", "will", "eat", "a", "German", "bratwurst"];
+var ciaMessage = ["The", "dog", "will", "eat", "a", "German", "bratwurst"];
 //Remove the last element from the message array using .pop.
 ciaMessage.pop()
 //Use the .push method to add the words breakfast and Munich as separate strings to the end of the array.
