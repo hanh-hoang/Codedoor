@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<title>CDDR Burger Festival 2019</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+    body {
+        font-family: "montserrat", Georgia, Serif;
+    }
+    
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: "montserrat";
+        letter-spacing: 5px;
+    }
+</style>
+
+<body>
+
+    <!-- Navbar (sit on top) -->
+    <div class="w3-top">
+        <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
+            <a href="#home" class="w3-bar-item w3-button">Burger Fest</a>
+            <!-- Right-sided navbar links. Hide them on small screens -->
+            <div class="w3-right w3-hide-small">
+                <a href="#about" class="w3-bar-item w3-button">About</a>
+                <a href="#schedule" class="w3-bar-item w3-button">Schedule</a>
+                <a href="#menu" class="w3-bar-item w3-button">Menu</a>
+                <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="w3-display-container w3-content w3-wide" style="max-width:1600px;min-width:500px" id="home">
+        <img class="w3-image" src="burger1.jpg" alt="Hamburger Catering" width="1600" height="800">
+        <div class="w3-display-bottomleft w3-padding-large w3-opacity">
+            <h1 class="w3-xxlarge" style="color: white">CDDR Burger Festival 2019</h1>
+        </div>
+    </header>
+
+    <!-- Page content -->
+    <div class="w3-content" style="max-width:1100px">
+
+        <!-- About Section -->
+        <div class="w3-row w3-padding-64" id="about">
+            <div class="w3-col m6 w3-padding-large w3-hide-small">
+                <img src="festival.jpg" class="w3-round w3-image w3-opacity-min" alt="Festival" width="600" height="1050">
+            </div>
+
+            <div class="w3-col m6 w3-padding-large">
+                <h1 class="w3-center">What?</h1><br>
+                <p class="w3-center"> Welcome to the Codedoor annual burger festival in Stuttgart. The name says it all. But take a look at our schedule for more information and what to expect.</p>
+                <h1 class="w3-center">Where?</h1><br>
+                <p class="w3-center"> The burger festival is held at <a href="https://dasmitte.de/" title="das mitte" target="_blank" class="w3-hover-text-green"> Jugendhaus Mitte</a> </p>
+                <h1 class="w3-center">When?</h1><br>
+                <p class="w3-center"> Save the date: 31.10.2019. </p>
+                <h1 class="w3-center">Entrance Fee</h1><br>
+                <p class="w3-center"> 10 Euros each, kids for free </p>
+            </div>
+        </div>
+
+        <hr>
+
+        <!-- Schedule Section -->
+        <div class="w3-row w3-padding-64" id="schedule">
+            <div class="w3-col l6 w3-padding-large">
+                <h1 class="w3-center">Schedule</h1><br>
+                <h4>Food Court: Noon - 8pm</h4>
+                <p class="w3-text-grey">Burger baby!</p><br>
+
+                <h4>Beer Tent: Noon - 10pm</h4>
+                <p class="w3-text-grey">Come on, it's beer</p><br>
+
+                <h4>Kid Corner: Noon - 4pm</h4>
+                <p class="w3-text-grey">Painting section, trampoline, ball house and more.</p><br>
+
+                <h4>Live Music on Stage: 2pm - 9pm</h4>
+                <p class="w3-text-grey">Different bands</p><br>
+            </div>
+
+            <div class="w3-col l6 w3-padding-large">
+                <img src="schedule.jpg" class="w3-round w3-image w3-opacity-min" alt="Menu" style="width:100%">
+            </div>
+        </div>
+
+        <!-- Menu Section -->
+        <div class="w3-row w3-padding-64" id="menu">
+            <div class="w3-col l6 w3-padding-large">
+                <img src="menu.jpg" class="w3-round w3-image w3-opacity-min" alt="Menu" style="width:100%">
+            </div>
+            <div class="w3-col l6 w3-padding-large">
+                <h1 class="w3-center">Our Menu</h1><br>
+                <h4>Cheese Burger</h4>
+                <p class="w3-text-grey">Assortment of hamburger topped with cheese</p><br>
+
+                <h4>Chicken Burger</h4>
+                <p class="w3-text-grey"> Super tasty hamburger made with seasoned, crispy chicken breast. </p><br>
+
+                <h4>Veggie Burger</h4>
+                <p class="w3-text-grey">Veggie burger made with chickpeas, sweet corn, herbs and spice.</p><br>
+
+                <h4>Insect Burger </h4>
+                <p class="w3-text-grey">Highly nutritious and sustainable source of protein burger, new trend.</p><br>
+
+                <h4>Others: fries, chicken wings, drinks</h4>
+                <p class="w3-text-grey">Even if you are not a burger fan, come for the side dishes, drinks and good fun.</p>
+            </div>
+
+
+        </div>
+
+        <hr>
+
+        <!-- Contact Section -->
+        <div class="w3-container w3-padding-64" id="contact">
+            <h1>Contact</h1><br>
+            <p></p>
+            <p class="w3-text-blue-grey w3-large"><b>Codedoor Burger Festival Organisation Team</b></p>
+            <p>You can also contact us by phone 00553123-2323 or email burgerfest2019@cddr.com, or you can send us a message here:</p>
+            <form action="/action_page.php" target="_blank">
+                <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
+                <p><input class="w3-input w3-padding-16" type="number" placeholder="How many people" required name="People"></p>
+                <p><input class="w3-input w3-padding-16" type="datetime-local" placeholder="Date and time" required name="date" value="2017-11-16T20:00"></p>
+                <p><input class="w3-input w3-padding-16" type="text" placeholder="Message \ Special requirements" required name="Message"></p>
+                <p><button class="w3-button w3-light-grey w3-section" type="submit">SEND MESSAGE</button></p>
+            </form>
+        </div>
+
+        <!-- End page content -->
+    </div>
+
+    <!-- Footer -->
+    <footer class="w3-center w3-light-grey w3-padding-32">
+        <p>Using template from <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a> and photos from <a href="https://unsplash.com/" title="unsplash" target="_blank" class="w3-hover-text-green">Unsplash</a></p>
+    </footer>
+
+</body>
+
+</html>
